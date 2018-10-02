@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Bko plugin template
+Plugin Name: Basic plugin template
 Depends:
 Provides: Plugin Wordpress basique
 Plugin URI:
