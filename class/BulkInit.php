@@ -73,13 +73,20 @@ class BulkInit{
 	 */
 	public function initObj()
 	{
-		// First of all requier Core class
+		// First of all require Core class
 		require_once( constant( BKO_PLUGIN_NAME . '_PLUGIN_CLASS_DIR' ) . '/Core.php' );
 
 		$BulkObj = [];
 		$ClassList = array_diff(
 			scandir( constant( BKO_PLUGIN_NAME . '_PLUGIN_CLASS_DIR' ) ),
-			[ '..', '.', 'BulkInit.php', 'Core.php' ] // Ignore unwanted file
+			[ '..', '.', 'BulkInit.php', 'Core.php'
+				// , 'Color.php'
+				// , 'Example.php'
+				, 'MetaBox.php'
+				, 'ReCaptchaForm.php'
+				, 'Slider.php'
+				, 'User.php'
+			] // Ignore unwanted files
 		);
 
 		foreach ( $ClassList as $key => $ClassFile )

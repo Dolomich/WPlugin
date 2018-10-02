@@ -27,11 +27,11 @@ class User
 	 */
 	public function hook()
 	{
-		add_action( 'admin_menu', array( $this, 'removeMenuHook' ), 100 );
-		add_action( 'admin_footer_text', array( $this, 'setAdminFooter' ), 100 );
-		add_action( 'admin_bar_menu', array( $this, 'removeMenuTopHook' ), 100 );
+		// add_action( 'admin_menu', array( $this, 'removeMenuHook' ), 100 );
+		// add_action( 'admin_footer_text', array( $this, 'setAdminFooter' ), 100 );
+		// add_action( 'admin_bar_menu', array( $this, 'removeMenuTopHook' ), 100 );
 		add_action('wp_dashboard_setup', array( $this, 'removeDashboardBox' ) );
-		add_filter( 'screen_options_show_screen', array( $this, 'removeScreenOption' ), 50 );
+		// add_filter( 'screen_options_show_screen', array( $this, 'removeScreenOption' ), 50 );
 		return true;
 	}
 
@@ -53,7 +53,7 @@ class User
 
 	/**
 	 * removeScreenOption
-	 * 
+	 *
 	 *@author Golga <r-ro@bulko.net>
 	 *@since VDO 1.5 (09/07/16 4a222c0b4cf92a254621e2daee847ec53eaf7ccb)
 	 *@see https://codex.wordpress.org/Dashboard_Widgets_API#Advanced:_Removing_Dashboard_Widgets

@@ -2,12 +2,12 @@
 /*
 Plugin Name: Bko plugin template
 Depends:
-Provides: Notre Super Plugin!
+Provides: Plugin Wordpress basique
 Plugin URI:
-Description: Notre Super Plugin!
-Version: 1.0.0
-Author: Bulko
-Author URI: http://www.bulko.net/
+Description: Plugin Wordpress basique
+Version: 0.1
+Author: Dolomich
+Author URI: http://www.dolostudio.com
 License: http://www.wtfpl.net/
 */
 // Make sure we don't expose any info if called directly
@@ -37,5 +37,5 @@ $whitelist = array(
 
 if( in_array($_SERVER['REMOTE_ADDR'], $whitelist) )
 {
-	$plugin->ReCaptchaForm->setTestMod();
+	// $plugin->ReCaptchaForm->setTestMod();
 }

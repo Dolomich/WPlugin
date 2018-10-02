@@ -18,7 +18,7 @@ class Example extends Core
 			'add_new_item' => __( 'Add example', 'example' ),
 			'edit_item' => __( 'Update example', 'example' ),
 			'new_item' => __( 'New example', 'example' ),
-			'view_item' => __( 'Wiew example', 'example' ),
+			'view_item' => __( 'View example', 'example' ),
 			'search_items' => __( 'Search example', 'example' ),
 			'not_found' => __( 'Example not found', 'example' ),
 			'not_found_in_trash' => __( 'Example not found in trash', 'example' ),
